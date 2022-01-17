@@ -1,7 +1,3 @@
-let pokemon = 'Charizard';
-let age = 3;
-let weight = 300;
-
 let Charizard = [
     ' Charizard',
     ' age 3yo',
