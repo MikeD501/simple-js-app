@@ -1,28 +1,24 @@
-let Charizard = [
-    ' Charizard',
-    ' age 3yo',
-    ' height 7ft',
-    ' type: fire, flying',
-]
+const pokemonList = [
+    {
+        name: 'Charizard',
+        age: 3,
+        height: 7,
+        type: ['fire', 'flying']
+    },
 
-let Venusaur = [
-    ' Venusaur',
-    ' age of 4yo',
-    ' height 8ft',
-    ' type: grass, poison',
-]
+    {
+        name: 'Venusaur',
+        age: 4,
+        height: 8, 
+        type:  ['Grass'],
+    },
 
-let Blastoise = [
-    ' Blastoise',
-    ' age 5yo',
-    ' height of 12ft',
-    ' type: water',
-]
+    {
+        name: 'Blastoise',
+        age: 5,
+        height: 12, 
+        type:  ['Water'],
+    }
+];
 
-let pokemonlist = [
-    Charizard,
-    Venusaur,
-    Blastoise,
-]
-
-document.write(pokemonlist);
+document.write(JSON.stringify(pokemonList));
