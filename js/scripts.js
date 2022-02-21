@@ -34,16 +34,32 @@ let pokemonRepository = (function () {
             pokemonList.push(pokemon);
     };
 
+    function addListItem(pokemon) {
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+            button.innerHTML=pokemon.name;
+        pokemonUl.appendChild(listItem);
+        pokemonUl.appendChild(button);
+    }
+
     return {
         getAll,
-        add: add,
+        add: add, 
+        addListItem,
     };
+
 }) ();
 
-//this prints the pokemonList Variables from the PokemonList in the PokemonRepository.  It gets the list from the getALL function at the bottom of the IIFE
+    
+    let pokemonUl = document.querySelector('.pokemon-list');
+    
+    pokemonRepository.getAll().forEach(function(pokemon){
+        pokemonRepository.addListItem(pokemon);
+    });
+
+
+    /*
 pokemonRepository.getAll().forEach(function(pokemon){
     document.write(pokemon.name + " is " + pokemon.height + "ft tall, and " + pokemon.age + " years old." + "<br />")
  });
-
-
-
+*/
