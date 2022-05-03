@@ -19,7 +19,8 @@ let pokemonRepository = (function () {
             pokemonList.push(pokemon);
     };
 
-    function addListItem(pokemon) {
+    function addListItem(pokemon) { 
+        
         let listItem = document.createElement('li');
         let pokemonUl = document.querySelector('.pokemon-list');
         let button = document.createElement('button');
@@ -31,6 +32,8 @@ let pokemonRepository = (function () {
             //adds the li and button elements to the site 
         pokemonUl.appendChild(listItem);
         pokemonUl.appendChild(button);
+
+       
     }
 
     function loadList() {

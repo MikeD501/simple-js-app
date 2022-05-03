@@ -2,13 +2,14 @@ body {
     background-color: #a90329;
 }
 
-h1 {
-    color: white;
+.navbar {
+    background-color: white;
+    color: #a90329;
 }
+
 
 .pokemon-list li {
     list-style-type: none;
-
 }
 
 .pokemon-list button {
